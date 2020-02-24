@@ -1,0 +1,134 @@
+body {
+  background-color: #fabe5e;
+  margin:0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+/* menu css starts */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cabbf0; 
+}
+
+li {
+  float: left;
+  border-right:2px solid #bbb;
+}
+
+li:last-child {
+  float: right;
+  border-left:2px solid #bbb;
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #6b5b95;
+}
+
+.active {
+  background-color: #44278d;
+}
+/* menu css ends */
+
+.page-content {
+  position: fixed;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.footer {
+ left: 5px;
+ bottom: 5px;
+ position: fixed;
+}
+
+/* genel page css starts */
+#genel-page {
+  visibility: visible;
+}
+
+.genel-page-line {
+  margin: 4px;
+  float: left;
+  width: 100%;
+}
+
+.genel-page-label {
+  float: left;
+  width: 150px;
+}
+/* genel page css ends */
+
+/* hafiza page css starts */
+#hafiza-page {
+  visibility: hidden;
+}
+
+#hafiza-listesi {
+  position: fixed;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.hafiza-page-line {
+  margin: 4px;
+  float: left;
+  width: 100%;
+}
+
+.hafiza-page-line-name {
+  float: left;
+  width: 30px;
+}
+
+.hafiza-page-label {
+  float: left;
+  width: 70px;
+}
+
+.hafiza-page-input {
+  float: left;
+  size: 4;
+  margin-right: 10px;
+}
+
+.hafiza-kontrol-buttons{
+  float: left;
+  position: fixed;
+  bottom: 50px;
+}
+
+.hafiza-button {
+  float: left;
+  margin-left: 20px;
+}
+
+/* hafiza page css ends */
+
+#vna-page {
+  visibility: hidden;
+}
+
+#hakkinda-page {
+  visibility: hidden;
+}

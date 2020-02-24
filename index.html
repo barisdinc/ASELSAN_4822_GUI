@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>TAMSAT - Aselsan 4800 Serisi PC Yazilimi </title>
+</head>
+
+<body>
+  <div class="top-menu">
+    <ul>
+      <li id="top-menu-genel" class="top-menu-item active"><a href="#genel">Genel</a></li>
+      <li id="top-menu-hafiza" class="top-menu-item"><a href="#hafiza">Hafiza</a></li>
+      <li id="top-menu-vna" class="top-menu-item"><a href="#vna">Anten Analizoru</a></li>
+      <li id="top-menu-hakkinda" class="top-menu-item"><a href="#hakkinda">Hakkinda</a></li>
+    </ul>
+  </div>
+
+  <div class="page-content" id="genel-page">
+    <div class="genel-page-line">
+      <div class="genel-page-label">Port</div>:
+      <select id="port-listesi"></select>
+      <button id="port-connect">Baglan</button>
+    </div>
+    <div class="genel-page-line">
+      <div class="genel-page-label">Cagri Isareti</div>:
+      <input />
+    </div>
+    <div class="genel-page-line">
+      <div class="genel-page-label">APRS Sure</div>:
+      <input />
+    </div>
+    <div class="genel-page-line">
+      <div class="genel-page-label">Cihaz Tipi</div>:
+      <button id="vhf">VHF Yap</button>
+      <button id="uhf">UHF Yap</button>
+    </div>
+    <div class="genel-page-line">
+      <div class="genel-page-label">Frekans Sinir</div>:
+      <input value="Min" /> - <input value="Max" />
+    </div>
+  </div>
+
+  <div class="page-content" id="hafiza-page">
+    <div id="hafiza-listesi"></div>
+    <div class="hafiza-kontrol-buttons">
+      <button class="hafiza-button" id="kanal-oku">Kanal Oku</button>
+      <button class="hafiza-button" id="kanal-yukle">Kanal Yukle</button>
+      <button class="hafiza-button" id="yedek-oku">Yedek Oku</button>
+      <button class="hafiza-button" id="yedek-yukle">Yedek Yukle</button>
+    </div>
+  </div>
+
+  <div class="page-content" id="vna-page">
+    <h1>VNA sayfasiiiiii</h1>
+  </div>
+
+  <div class="page-content" id="hakkinda-page">
+    <h1>Hakkinda Sayfasiiiiii</h1>
+  </div>
+
+  <div class="footer">
+    Bu yazilim TAMSAT Amator Uydu Teknolojileri Dernegi tarafindan uretilen Aselsan 4800 kitleri icin yazilmistir.
+  </div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
